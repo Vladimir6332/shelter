@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <title>Shelter</title>
+  </head>
+  <body>
+    <header class="header" id="header">
+      <div class="wrapper header-wrapper">
+        <h1 class="element-invisible">Cozy House</h1>
+        <div class="logo" id="logo">
+          <a class="logo__link" href="main_bundle.html">
+            <span class="logo__title">Cozy House</span>
+          <span class="logo__subtitle">Shelter for pets in Boston</span>
+          </a>
+          
+        </div>
+        <div class="nav-wrapper">
+          <nav class="navigation navigation-wrapper">
+            <ul class="navigation__list">
+              <li class="navigation__item">
+                <a href="main_bundle.html">About the shelter</a>
+              </li>
+              <li class="navigation__item navigation__item_active">
+                <a href="#header">Our pets</a>
+              </li>
+              <li class="navigation__item">
+                <a href="#">Help the shelter </a>
+              </li>
+              <li class="navigation__item"><a href="#">Contacts</a></li>
+            </ul>
+          </nav>
+          <nav class="navigation-mobile" id="nav-mobile">
+            <div class="logo">
+              <a class="logo__link" href="main_bundle.html">
+              <span class="logo__title logo__title_light">Cozy House</span>
+              <span class="logo__subtitle logo__subtitle_light">Shelter for pets in Boston</span>
+            </a>
+            </div>
+            <ul class="navigation__list navigation__list_mobile">
+              <li class="navigation-mobile__item ">
+                <a href="main_bundle.html">About the shelter</a>
+              </li>
+              <li class="navigation-mobile__item navigation-mobile__item_active">
+                <a href="#header">Our pets</a>
+              </li>
+              <li class="navigation-mobile__item">
+                <a href="#">Help the shelter </a>
+              </li>
+              <li class="navigation-mobile__item"><a href="#">Contacts</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="hamburger-wrapper">
+          <div class="hamburger" id="hamburger">
+            <div class="hamburger__line"></div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="pets">
+        <div class="wrapper pets-wrapper">
+          <h3 class="pets__title">
+            Our friends who <br />are looking for a house
+          </h3>
+          <div class="pets-slider slider-wrapper">
+            <div class="pets-slider-container" id="slider-container">
+            <ul class="pets-slider__list"  id="slider">
+              
+            </ul>
+          </div>
+
+            <div class="pets-controls pets-controls-wrapper">
+              <ul class="pets-controls__list">
+                <li class="pets-controls__item">
+                  <button
+                    class="pets-controls__button pets-controls__button_inactive"
+                    disabled
+                    id="first"
+                  >
+                    <span class="pets-controls__content">&lt;&lt;</span>
+                  </button>
+                </li>
+                <li class="pets-controls__item">
+                  <button
+                    class="pets-controls__button pets-controls__button_inactive"
+                    disabled
+                    id="prev"
+                  >
+                    <span class="pets-controls__content">&lt;</span>
+                  </button>
+                </li>
+                <li class="pets-controls__item">
+                  <button
+                    class="pets-controls__button pets-controls__button_active"
+                  >
+                    <span class="pets-controls__content" id="current">1</span>
+                  </button>
+                </li>
+                <li class="pets-controls__item">
+                  <button class="pets-controls__button" id="next">
+                    <span class="pets-controls__content">&gt;</span>
+                  </button>
+                </li>
+                <li class="pets-controls__item">
+                  <button class="pets-controls__button" id="last">
+                    <span class="pets-controls__content">&gt;&gt;</span>
+                  </button>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="popup-wrapper " id="overlay">
+            <div class="popup" id="popup">
+              <div class="popup-picture-wrapper"><img class="popup__picture" id="popup-img" src="#" alt="Pet Image"></div>
+              <div class="popup__content">
+                <h3 class="popup__title" id="popup-name"></h3>
+                <h4 class="popup__type" id="popup-type"></h4>
+                <p class="popup__description" id="popup-description"></p>
+                <div class="popup-info">
+                  <ul class="popup-info__list">
+                    <li class="popup-info__item"><h5 class="popup-info__title">Age: </h5><span id="popup-age"></span></li>
+                    <li class="popup-info__item"><h5 class="popup-info__title">Inoculations: </h5><span id="popup-inoculations"></span></li>
+                    <li class="popup-info__item"><h5 class="popup-info__title" >Diseases: </h5><span id="popup-diseases"></span></li>
+                    <li class="popup-info__item"><h5 class="popup-info__title">Parasites: </h5><span id="popup-parasites"></span></li>
+                  </ul>
+                </div>
+              </div>
+              <button class="popup__button" id="popup-button"><img src="assets/images/popup-close.svg" alt="Close"></button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="wrapper footer-wrapper">
+        <div class="footer-info-wrapper">
+          <div class="questions">
+            <h3 class="questions__title">For questions and suggestions</h3>
+            <div class="question-contacts">
+              <ul class="question-contacts__list">
+                <li class="question-contacts__item">
+                  <a
+                    class="question-contacts__link"
+                    href="mailto:email@shelter.com"
+                  >
+                    <img src="assets/images/icon-email.svg" alt="Email" />
+                    email@shelter.com</a
+                  >
+                </li>
+                <li class="question-contacts__item">
+                  <a class="question-contacts__link" href="tel:+136745677554">
+                    <img src="assets/images/icon-phone.svg" alt="Phone" />
+                    +13 674 567 75 54</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="visit">
+            <h3 class="visit__title">We are waiting for your visit</h3>
+            <div class="visit-contacts">
+              <ul class="visit-contacts__list">
+                <li class="visit-contacts__item">
+                  <a
+                    class="visit-contacts__link"
+                    href="https://www.google.ru/maps/@53.718879,27.986709,7z"
+                    target="_blank"
+                  >
+                    <img
+                      src="assets/images/icon-marker.svg"
+                      alt="Address"
+                    />1 Central Street, Boston (entrance from the store)</a
+                  >
+                </li>
+                <li class="visit-contacts__item">
+                  <a
+                    class="visit-contacts__link"
+                    href="https://www.google.ru/maps/@53.718879,27.986709,7z"
+                    target="_blank"
+                  >
+                    <img
+                      src="assets/images/icon-marker.svg"
+                      alt="Address"
+                    />18 South Park, London
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        
+        
+        <div class="footer__picture">
+          <img src="assets/images/footer-puppy.png" alt="Image puppy" />
+        </div>
+      </div>
+    </footer>
+  <script src="pets.js"></script></body>
+</html>
